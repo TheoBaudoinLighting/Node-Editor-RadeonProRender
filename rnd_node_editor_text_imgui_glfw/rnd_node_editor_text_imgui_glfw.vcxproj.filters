@@ -51,6 +51,9 @@
     <ClCompile Include="external\glad\src\glad.c">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="core\shaders\hrs_shader_manager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\node_editor.hpp">
@@ -93,9 +96,6 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="external\imgui\backends\imgui_impl_glfw.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="core\radeon.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="external\RadeonProRender\common\common.h">
@@ -152,5 +152,12 @@
     <ClInclude Include="external\glad\include\glad\glad.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="core\shaders\hrs_shader_manager.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\shaders\shader.vert" />
+    <None Include="core\shaders\shader.frag" />
   </ItemGroup>
 </Project>
