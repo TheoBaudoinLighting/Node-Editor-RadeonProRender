@@ -975,29 +975,33 @@ void viewer()
 
 int main()
 {
+	// Initialize the library
 	opengl_init();
 	imgui_init();
 	radeon_init();
-	
 	radeon_init_pre_render(m_window_width_, m_window_height_);
 
-
-
+	// Main loop
 	while (!glfwWindowShouldClose(window))
 	{
+		// Pre rendering
 		opengl_render();
 		imgui_init_render();
 		radeon_init_render();
 
+		// Rendering
 		radeon_render_engine();
 
+		// Show the viewer with the rendered image <- dynamic window and buffers
+		// You can modificate the scene in real time
 		viewer();
 
+		// Post rendering
 		imgui_post_render();
 		opengl_post_render();
-
 	}
 
+	radeon_cleanup();
 	imgui_cleanup();
 	opengl_cleanup();
 
