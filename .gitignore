@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+/.vs/rnd_node_editor_text_imgui_glfw
+/x64/Debug
+/rnd_node_editor_text_imgui_glfw/Resources
+/rnd_node_editor_text_imgui_glfw/x64/Debug
+/rnd_node_editor_text_imgui_glfw/external
+/rnd_node_editor_text_imgui_glfw/hipbin
+*.ini
+/rnd_node_editor_text_imgui_glfw/cache
